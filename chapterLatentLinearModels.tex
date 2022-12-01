@@ -187,7 +187,7 @@ where $\vec{U}$ is an $N \times N$ matrix whose columns are orthornormal(so $\ve
 
 This shows how to decompose the matrix $X$ into the product of three matrices: $\vec{V}$ describes an orthonormal basis in the domain, and $\vec{U}$ describes an orthonormal basis in the co-domain, and $\vec{\Sigma}$ describes how much the vectors in $\vec{V}$ are stretched to give the vectors in $\vec{U}$.
 
-Since there are at most $D$ singular values (assuming $N>D$), the last $N−D$ columns of $\vec{U}$ are irrelevant, since they will be multiplied by 0. The \textbf{economy sized SVD}, or \textbf{thin SVD}, avoids computing these unnecessary elements. Let us denote this decomposition by $\hat{\vec{U}}\hat{\vec{\Sigma}}\hat{\vec{V}}^T$.If $N>D$, we have
+Since there are at most $D$ singular values (assuming $N>D$), the last $N-D$ columns of $\vec{U}$ are irrelevant, since they will be multiplied by 0. The \textbf{economy sized SVD}, or \textbf{thin SVD}, avoids computing these unnecessary elements. Let us denote this decomposition by $\hat{\vec{U}}\hat{\vec{\Sigma}}\hat{\vec{V}}^T$.If $N>D$, we have
 \begin{equation}
 \underbrace{\vec{X}}_{N \times D}=\underbrace{\hat{\vec{U}}}_{N \times D}\underbrace{\hat{\vec{\Sigma}}}_{D \times D}\underbrace{\hat{\vec{V}}^T}_{D \times D}
 \end{equation}

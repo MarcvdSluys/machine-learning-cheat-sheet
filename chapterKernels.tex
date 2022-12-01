@@ -452,7 +452,7 @@ SVMs for both classification and regression require that you specify the kernel 
 \label{fig:choosing-C} 
 \end{figure}
 
-The authors of libsvm recommend (Hsu et al. 2009) using CV over a 2d grid with values $C \in \{2^{−5},2^{−3},\cdots,2^{15}\}$ and $\gamma \in \{2^{−15},2^{−13},\cdots,2^3\}$. In addition, it is important to standardize the data first, for a spherical Gaussian kernel to make sense.
+The authors of libsvm recommend (Hsu et al. 2009) using CV over a 2d grid with values $C \in \{2^{-5},2^{-3},\cdots,2^{15}\}$ and $\gamma \in \{2^{-15},2^{-13},\cdots,2^3\}$. In addition, it is important to standardize the data first, for a spherical Gaussian kernel to make sense.
 
 To choose $C$ efficiently, one can develop a path following algorithm in the spirit of lars (Section 13.3.4 TODO). The basic idea is to start with $\lambda$ large, so that the margin $1/\lVert\vec{w}(\lambda)\rVert$ is wide, and hence all points are inside of it and have $\alpha_i =1$. By slowly decreasing $\lambda$, a small set of points will move from inside the margin to outside, and their $\alpha_i$ values will change from 1 to 0, as they cease to be support vectors. When $\lambda$ is maximal, the function is completely smoothed, and no support vectors remain. See (Hastie et al. 2004) for the details.
 

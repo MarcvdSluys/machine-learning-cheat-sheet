@@ -54,12 +54,12 @@ The MLE does not suffer from this since the likelihood is a function, not a prob
 
 \subsection{Credible intervals}
 \label{sec:Credible-intervals}
-In addition to point estimates, we often want a measure of confidence. A standard measure of confidence in some (scalar) quantity $\theta$ is the “width” of its posterior distribution. This can be measured using a $100(1−\alpha)\%$ credible interval, which is a (contiguous) region $C=(\ell,u)$(standing for lower and upper) which contains $1−\alpha$ of the posterior probability mass, i.e.,
+In addition to point estimates, we often want a measure of confidence. A standard measure of confidence in some (scalar) quantity $\theta$ is the “width” of its posterior distribution. This can be measured using a $100(1-\alpha)\%$ credible interval, which is a (contiguous) region $C=(\ell,u)$(standing for lower and upper) which contains $1-\alpha$ of the posterior probability mass, i.e.,
 \begin{equation}
 C_{\alpha}(\mathcal{D}) \quad \text{where } P(\ell \leq \theta \leq u)=1-\alpha
 \end{equation}
 
-There may be many such intervals, so we choose one such that there is $(1−\alpha)/2$ mass in each tail; this is called a \textbf{central interval}.
+There may be many such intervals, so we choose one such that there is $(1-\alpha)/2$ mass in each tail; this is called a \textbf{central interval}.
 
 If the posterior has a known functional form, we can compute the posterior central interval using $\ell=F^{-1}(\alpha/2)$ and $u=F^{-1}(1-\alpha/2)$, where $F$ is the cdf of the posterior. 
 
